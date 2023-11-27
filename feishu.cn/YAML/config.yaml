@@ -1,0 +1,13 @@
+#初始数据
+desired_caps:
+   platformName: Android
+   deviceName: 127.0.0.1:62001
+   platformVersion: 10
+   appPackage: com.ss.android.lark
+   appActivity: .main.app.MainActivity
+   unicodeKeyboard: True
+   resetKeyboard: True
+   automationName: uiautomator2
+   noReset: True
+   URL: http://127.0.0.1:4723/wd/hub
+   newCommandTimeout: 2000
