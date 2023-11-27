@@ -10,7 +10,7 @@ class login_test(unittest.TestCase):
         p = os.popen('adb shell pm clear com.ss.android.lark')
         p.close()
         logger.info("执行清除缓存数据")
-        L = login('13534077215', 'test1234')
+        L = login()
         L.implicitly_wait(10)
         try:
             L.find_element_by_xpath('//*[@text="个人信息保护指引"]').is_displayed()
@@ -63,7 +63,7 @@ class login_test(unittest.TestCase):
                 logger.info("发送消息")
 
     def test_hot_start_B(self):
-        L = login('13534077215', 'test1234')
+        L = login()
         L.implicitly_wait(10)
         try:
             L.find_element_by_xpath('//*[@text="登录"]').is_displayed()

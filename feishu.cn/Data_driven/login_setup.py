@@ -8,7 +8,7 @@ from appium import webdriver
 from YAML.yaml import *
 from Logs.logging_test import *
 
-def login(edt_username,edt_pwd):
+def login():
 
     data = get_yaml_load_all("config.yaml")
     desired_caps = {
